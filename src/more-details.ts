@@ -15,14 +15,17 @@ template.innerHTML = /* html*/`
 /** web component that offers optional details to the user */
 export class MoreDetails extends HTMLElement {
   /** create component and declare members for slots */
+  private _detailToggle!: HTMLAnchorElement;
+  private _textSlot!: HTMLSlotElement;
+  private _detailsSlot!: HTMLSlotElement;
   constructor() {
     super();
     this.attachShadow({mode: 'open'});
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.shadowRoot!.appendChild(template.content.cloneNode(true));
 
-    this._detailToggle = this.shadowRoot.querySelector('a');
-    this._textSlot = this.shadowRoot.querySelector('slot[name=text]');
-    this._detailsSlot = this.shadowRoot.querySelector('slot[name=details]');
+    this._detailToggle = this.shadowRoot!.querySelector('a')!;
+    this._textSlot = this.shadowRoot!.querySelector('slot[name=text]')!;
+    this._detailsSlot = this.shadowRoot!.querySelector('slot[name=details]')!;
   }
 
   /** hide or show elements based on the updated attribute */
@@ -51,10 +54,10 @@ export class MoreDetails extends HTMLElement {
 
   /**
    * return an array of all elements in details slot
-   * @return {Array} detailElements
+   * @return {Array<HTMLElement>} detailElements
    */
   _allDetails() {
-    return Array.from(this.querySelectorAll('*[slot=details]'));
+    return Array.from(this.querySelectorAll('*[slot=details]')) as Array<HTMLElement>;
   }
 
   /** automatically hide or show elements when slotted */
