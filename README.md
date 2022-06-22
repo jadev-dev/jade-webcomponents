@@ -27,11 +27,11 @@ developing skills with
 
 ---
 ## examples and inspiration 
-* [material-webcomponents - DannyMoerkerke](https://github.com/DannyMoerkerke/material-webcomponents)
+* [material-webcomponents - DannyMoerkerke (JavaScript)](https://github.com/DannyMoerkerke/material-webcomponents)
 * [ken-burns-carousel - Festify (TypeScript)](https://github.com/Festify/ken-burns-carousel)
-* [zoo-web-components](https://github.com/zooplus/zoo-web-components)
+* [zoo-web-components (JavaScript)](https://github.com/zooplus/zoo-web-components)
 * [lite-youtube - justinribeiro (TypeScript)](https://github.com/justinribeiro/lite-youtube)
-* [typewritten-text - Auroratide](https://github.com/Auroratide/typewritten-text)
+* [typewritten-text - Auroratide (JavaScript)](https://github.com/Auroratide/typewritten-text)
 
 ---
 ## other useful things
