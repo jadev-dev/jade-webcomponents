@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+</head>
+<style>
+    p[slot=details] {
+        font-style: italic;
+    }
+    ::part(detail-toggle) {
+        font-style: italic;
+        text-decoration: none;
+    }
+    more-details > p,
+    ::part(detail-toggle) {
+        margin: 0;
+        padding: 0.25em;
+    }
+</style>
+<more-details id="seventeen">
+    <p slot=text>10 + 7 = 17</p>
+    <p slot=details>the numbers ten and seven, when added together, equal seventeen</p>
+</more-details>
+<script src=more-details.js type=module></script>
