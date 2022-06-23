@@ -14,9 +14,18 @@
         margin: 0;
         padding: 0.25em;
     }
+    [aria-selected=true] {
+        color: magenta;
+    }
 </style>
 <more-details id="seventeen">
     <p slot=text>10 + 7 = 17</p>
     <p slot=details>the numbers ten and seven, when added together, equal seventeen</p>
 </more-details>
+<basic-dropdown>
+    <basic-option>example 1</basic-option>
+    <basic-option>example 2</basic-option>
+    <basic-option>example 3</basic-option>
+</basic-dropdown>
 <script src=../dist/more-details.js type=module></script>
+<script src=../dist/basic-dropdown.js type=module></script>
